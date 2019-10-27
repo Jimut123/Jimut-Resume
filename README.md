@@ -30,7 +30,7 @@ This template attempts to **look clean**, highlight **details**, be a **single p
 
 ## Availability
 
-1. MacFonts version - [as an online preview](jimut_resume.pdf) and [as a direct download](deedy_resume.pdf)
+1. MacFonts version - [as an online preview](jimut_resume.pdf) and [as a direct download](https://github.com/Jimut123/Jimut-Resume/raw/master/jimut_resume.pdf)
 
 ## License
     Copyright 2014 Debarghya Das
