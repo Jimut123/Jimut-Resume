@@ -1,0 +1,250 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Jimut Bahan}{Pal}{ \urlstyle{same}\href{https://jimut123.github.io/}{jimut123.github.io}| \href{https://www.linkedin.com/in/jimut-bahan-pal-156862123/}{linkedIn-Jimut}\\
+\href{mailto:jimutbahanpal@yahoo.com}{jimutbahanpal@yahoo.com} | +91-890-220-9098 | \href{mailto:jimutbahanpal@gmail.com}{jimutbahanpal@gmail.com}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{\href{http://cs.rkmvu.ac.in/}{RKMVERI, Belur}}
+\descript{M.Sc. in Computer Science}
+\location{July 2021 | Belur, Kolkata, West Bengal}
+\sectionsep
+
+\subsection{\href{http://sxccal.edu/}{St. Xavier's College}}
+\descript{July 2016 | B.Sc. in Computer Science|  74.5\%}
+\sectionsep
+
+\subsection{\href{http://www.centralmodernschool.in/}{Central Modern School}}
+\location{ISC : 95.75\% | May 2016|  Kolkata}
+\sectionsep
+
+\subsection{St. Agnes Branch, IIT KGP}
+\descript{July 2008 | Primary Schooling }
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Research Gate://  \href{https://www.researchgate.net/profile/Jimut_Pal}{\bf Jimut\_Pal} \\
+Github:// \href{https://github.com/Jimut123}{\bf Jimut123} \\
+LinkedIn://  \href{https://www.linkedin.com/in/jimut-bahan-pal-156862123/}{\bf jimut-bahan-pal} \\
+YouTube://  \href{https://www.youtube.com/channel/UCCy7zhn66c0TT-tDAcenKfA?view_as=subscriber}{\bf Jimut Pal} \\
+Twitter://  \href{https://twitter.com/jimut_pal}{\bf @jimut\_pal} \\
+Facebook:// \href{https://www.facebook.com/jimut.pal.5}{\bf jimut.pal.5} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Graduate}
+Advanced Machine Learning \\
+Computational Geometry \\
+Advanced Algorithms \\
+Optimisation Techniques \\
+AI and Computer Vision \\
+Compilers, Data Mining \\
+Probability and Discrete Maths \\
+
+\sectionsep
+
+\subsection{Undergraduate}
+Operating Systems \\
+Automata and Numerical Computing \\
+Imperative Programming \\
+Networking and DBMS \\
+Computer Graphics + Practicum \\
+Unix Tools and Scripting \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Over 5000 lines:}
+\textbullet{} Python \textbullet{}   Shell \textbullet{} Java \textbullet{} C++  \\
+ \textbullet{} Matlab  \textbullet{} \LaTeX\ \\ 
+\location{Over 1000 lines:}
+\textbullet{} Javascript \textbullet{} C \textbullet{}  CSS \textbullet{} PHP \textbullet{} Assembly \\
+\location{Familiar:}
+ \textbullet{} MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{Data Sutram}
+\descript{| \href{https://drive.google.com/file/d/15TrhfegS-W4KxF-mQ16nFSLaUtESH9W1/view}{Project Intern }}
+\location{Jan 2019 (1 mo)| Rabindra Sarovar, Kolkata} 
+\thinspace\\
+\begin{tightemize}
+\item Data Visualization Projects using Folium in Python3
+\item Scraped Various websites for \textbf{\href{https://github.com/Jimut123/LeaderBehaviour}{data analysis}}
+\item Collected Data for \textbf{\href{https://github.com/Jimut123/jimutmap}{Machine Learning Projects turning into Python3 library}}
+\end{tightemize}
+\sectionsep
+
+
+\section{Others}
+There were various things that I was involved with during my U.G. in St. Xavier's College, Kolkata:
+
+\begin{tightemize}
+
+\item \textbf{\href{https://jimut123.github.io/img/gallery/enigma_2019.jpg}{ENIGMA}} | \textbf{\href{https://drive.google.com/file/d/1na_kOeKz-qQoKZQU-KqmhgzQQj87JBF5/view}{Event Head}} | Science Association | Coding Event
+
+\item \textbf{\href{https://jimut123.github.io/img/gallery/Analytica_2018.JPG}{Analytica}} | \textbf{\href{https://drive.google.com/file/d/19V0XR_y_J2Kwwa0wUGLs7W0D9UNHKfNl/view}{Graphics Design Team}} | Maths Dept.
+
+\item \textbf{\href{https://jimut123.github.io/img/gallery/mlcc_sxc_2019.jpg}{Key-note Speaker}} | Google | \textbf{\href{https://drive.google.com/file/d/1vHeJ8tEzdLJO1TokufkcoPY-Ohgw6DLX/view}{MLCCSXC}}
+
+\item \textbf{\href{https://drive.google.com/file/d/1bEblSdzQbAKvSxkpFm3sMqGE8oqqWr5R/view}{Developer}} | \textbf{\href{https://jimut123.github.io/xavo2018/}{Xavotsav Website}}
+
+\item Developed Several games |  \textbf{\href{https://jimut123.github.io/games/RollerMadness2/index.html}{Roller Madness}} | \textbf{\href{https://jimut123.github.io/games/BoxShooter2/index.html}{Box Shooter}} | \textbf{\href{https://jimut123.github.io/games/SuperSpartyBrothers/index.html}{Super Sparty Brothers}} |
+\textbf{\href{https://jimut123.github.io/projects/fps.html}{FPS game}} | \textbf{\href{https://jimut123.github.io/projects/stopwatch_game.html}{Stopwatch Game}} | \textbf{\href{https://jimut123.github.io/projects/solar_system.html}{Solar System Simulator}} | \textbf{\href{https://jimut123.github.io/projects/pong.html}{Pong Game}} | \textbf{\href{https://jimut123.github.io/projects/memory_game.html}{Memory Game}} | \textbf{\href{https://jimut123.github.io/games/JumpAndRoll2D/index.html}{Jump and Roll}} | \textbf{\href{https://jimut123.github.io/games/Breakout2D/mdn_breakout.html}{Breakout 2D}}
+
+\item Worked in Python3 to create some interesting Projects, some were in \textbf{\href{https://pypi.org/user/Jimut123/}{pip}} | \textbf{\href{https://jimut123.github.io/projects/wisp.html}{Wisp}} | \textbf{\href{https://jimut123.github.io/projects/mis.html}{MIS application}} | \textbf{\href{https://jimut123.github.io/projects/spammify.html}{Spammify}} | \textbf{\href{https://jimut123.github.io/projects/scrawll.html}{Scrawll}} | \textbf{\href{https://jimut123.github.io/projects/crawler.html}{Web crawler}} | \textbf{\href{https://jimut123.github.io/projects/jimutmap.html}{Jimutmap}} | \textbf{\href{https://jimut123.github.io/projects/jgd.html}{JGD}} | \textbf{\href{https://jimut123.github.io/projects/jimner.html}{Jimner}}
+
+
+\item Did several \textbf{\href{https://jimut123.github.io/certificates.html}{courses on Coursera}} and earned Specializations | \textbf{\href{https://www.coursera.org/account/accomplishments/specialization/88P8SNNTEFTH}{DL}} | \textbf{\href{https://www.coursera.org/account/accomplishments/specialization/K36A43C6J3N7}{Applied Data Science}}| \textbf{\href{https://www.coursera.org/account/accomplishments/specialization/RQHE57YQZ2ZW}{Python}}
+
+
+\end{tightemize}
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Wisp}
+\descript{| \href{https://jimut123.github.io/projects/wisp.html}{B.Sc. Dissertation}}
+\location{November 2018 – June 2019 | St. Xavier's College, Kolkata}
+Worked with \textbf{\href{https://www.sxccal.edu/SXC-Faculty/fullProfile/ShalabhAgarwal.pdf}{Prof. Shalabh Agarwal}} to create an \textbf{\href{https://jimut123.github.io/blogs/jjc_wisp.html}{clustering algorithm}} which finds the best location according to preferences.
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+
+\begin{tabular}{rll}
+2016	      & \textbf{\href{https://drive.google.com/file/d/0B51qRUWxSiZRSFZDM3lob2ZoVTQ/view}{Felicitated from Central Modern School, Kolkata}} \\
+2016     & \textbf{\href{https://drive.google.com/file/d/0B51qRUWxSiZROWZUYTFWZUQxNVE/view}{Felicitated from Baranagar Municipality}} \\
+2015     & \textbf{\href{https://drive.google.com/file/d/0B51qRUWxSiZRdmNmQmRyRE5HVUU/view}{Ranked 3\textsuperscript{rd} in class 11, Central Modern School, Kolkata}} \\
+2014     & \textbf{\href{https://drive.google.com/file/d/0B51qRUWxSiZRdTl4TUpxMkpJZkE/view}{Felicitated from Baranagar Municipality}} \\
+\end{tabular}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Publications} 
+\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+\bibliographystyle{abbrv}
+\bibliography{publications}
+\nocite{*}
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
